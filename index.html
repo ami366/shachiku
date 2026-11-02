@@ -14,7 +14,7 @@ const key='shachiku_app_v1',defaults=['パソコン操作','事務手続き','�
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,onAuthStateChanged,signInWithEmailAndPassword,signOut,setPersistence,browserLocalPersistence} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import {getFirestore,doc,setDoc,deleteDoc,collection,onSnapshot,writeBatch} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
-const firebaseConfig={apiKey:'AIzaSyDgrQHF1pfupHLfTn4NLGZ4b5AQZcK1yk',authDomain:'shachiku-app-f593c.firebaseapp.com',projectId:'shachiku-app-f593c',storageBucket:'shachiku-app-f593c.firebasestorage.app',messagingSenderId:'957435594279',appId:'1:957435594279:web:8d93df50a4addcb0d8b002'};
+const firebaseConfig={apiKey:'AIzaSyDgrnQFH1pfupHlfTn4NLGZ4b5AQZcK1yk',authDomain:'shachiku-app-f593c.firebaseapp.com',projectId:'shachiku-app-f593c',storageBucket:'shachiku-app-f593c.firebasestorage.app',messagingSenderId:'957435594279',appId:'1:957435594279:web:8d93df50a4addcb0d8b002'};
 try {
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);let uid=null,unsubs=[],remoteNotes=new Map(),remoteCats=null,initialized=0,oldIds=new Set(),busy=false;
 const api=window.shachiku;
